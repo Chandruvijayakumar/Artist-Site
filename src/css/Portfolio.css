@@ -1,0 +1,99 @@
+/* src/pages/Portfolio.css */
+.portfolio {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.portfolio-intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.portfolio-intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.portfolio-intro p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.portfolio-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.portfolio-item {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portfolio-item-info {
+  padding: 15px;
+}
+
+.portfolio-item-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.portfolio-item-info p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.portfolio-item-info a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.portfolio-item-info a:hover {
+  text-decoration: underline;
+}
+
+.portfolio-about {
+  margin-top: 50px;
+}
+
+.portfolio-about h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.team-member-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.team-member-info p {
+  font-size: 1rem;
+  color: #666;
+}
