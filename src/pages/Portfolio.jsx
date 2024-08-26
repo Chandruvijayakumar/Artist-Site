@@ -5,7 +5,8 @@ function Portfolio() {
   return (
     <section className="portfolio">
       <div className="portfolio-intro">
-        <h2>Our Portfolio</h2>
+        <h2>My Portfolio</h2>
+        <img src="/public/main.JPG" alt="Project 1" />
         <p>
           Explore a selection of our most recent and notable projects. We take
           pride in our work and strive for excellence in every project we

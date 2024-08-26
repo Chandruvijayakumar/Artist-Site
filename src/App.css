@@ -1,6 +1,6 @@
 /* Global Styles */
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #333;
   margin: 0;
   padding: 0;
@@ -43,63 +43,6 @@ body {
   }
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes glow {
-  0% {
-    box-shadow: 0 0 5px #ffcc00;
-  }
-  100% {
-    box-shadow: 0 0 20px #ffcc00;
-  }
-}
-
-/* Navbar */
-nav {
-  background-color: #222;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  animation: fadeIn 1s ease-in-out;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav ul li {
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 8px 12px;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-  animation: pulse 1.5s infinite ease-in-out;
-}
-
-nav ul li a:hover {
-  background-color: #555;
-  border-radius: 4px;
-  animation: glow 1s infinite alternate ease-in-out;
-}
 
 /* Footer */
 footer {
@@ -320,7 +263,7 @@ h2 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3;
+  transition: transform 0.3s ease, box-shadow 0.3s
 }
 
 .blog-post:hover {
@@ -343,107 +286,71 @@ h2 {
   animation: fadeIn 1.5s ease-in-out;
 }
 
-.blog-post a {
-  text-decoration: none;
-  color: #ff5722;
-  transition: color 0.3s ease;
-  animation: pulse 1.5s infinite ease-in-out;
-}
-
-.blog-post a:hover {
-  color: #ffcc00;
-}
-
 /* Contact Page */
-.contact-form {
-  max-width: 600px;
+.contact {
+  max-width: 900px;
   margin: 0 auto;
-  padding: 30px;
+  padding: 40px 20px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   animation: fadeIn 1.5s ease-in-out;
 }
 
-.contact-form h2 {
-  font-size: 2em;
+.contact h2 {
   margin-bottom: 20px;
-  color: #222;
-  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.contact p {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact form input,
+.contact form textarea {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 1.1em;
   animation: slideInRight 1.5s ease-in-out;
 }
 
-.contact-form label {
-  font-size: 1em;
-  margin-bottom: 5px;
-  display: block;
-  color: #555;
-  animation: fadeIn 1.5s ease-in-out;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1em;
-  animation: fadeIn 1.5s ease-in-out;
-  transition: border-color 0.3s ease;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #ff5722;
-  outline: none;
-  animation: glow 1s infinite alternate ease-in-out;
-}
-
-.contact-form button {
+.contact form button {
+  padding: 15px;
   background-color: #ff5722;
   color: #fff;
-  padding: 12px 20px;
   border: none;
   border-radius: 4px;
-  font-size: 1.1em;
+  font-size: 1.2em;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  animation: pulse 1.5s infinite ease-in-out;
-}
-
-.contact-form button:hover {
-  background-color: #ffcc00;
   animation: glow 1s infinite alternate ease-in-out;
 }
 
-/* Gallery Page */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 40px 20px;
-  animation: fadeIn 1.5s ease-in-out;
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: slideInRight 1.5s ease-in-out;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  animation: glow 1s infinite alternate ease-in-out;
+.contact form button:hover {
+  background-color: #e64a19;
 }
 
 /* Testimonials Page */
 .testimonials {
   padding: 40px 20px;
-  background-color: #f4f4f9;
+  background-color: #f8f8f8;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.testimonials h2 {
+  font-size: 2.5em;
+  color: #222;
+  text-align: center;
+  margin-bottom: 40px;
   animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -451,9 +358,8 @@ h2 {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
   padding: 20px;
-  text-align: center;
+  margin-bottom: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: slideInLeft 1.5s ease-in-out;
 }
@@ -464,115 +370,194 @@ h2 {
   animation: glow 1s infinite alternate ease-in-out;
 }
 
-.testimonial-card img {
-  border-radius: 50%;
-  margin-bottom: 15px;
-  width: 80px;
-  height: 80px;
-}
-
-.testimonial-card h3 {
-  font-size: 1.4em;
-  color: #333;
-  margin-bottom: 10px;
-  animation: fadeIn 1.5s ease-in-out;
-}
-
 .testimonial-card p {
   font-size: 1.1em;
   color: #555;
   animation: fadeIn 1.5s ease-in-out;
 }
 
-/* Call-to-Action Button */
-.cta-button {
-  display: inline-block;
-  padding: 15px 30px;
-  background-color: #ff5722;
-  color: #fff;
-  text-align: center;
-  font-size: 1.2em;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  animation: pulse 1.5s infinite ease-in-out;
-}
-
-.cta-button:hover {
-  background-color: #ffcc00;
-  transform: scale(1.05);
-  animation: glow 1s infinite alternate ease-in-out;
-}
-
-/* Scroll Animations */
-.scroll-fadeIn {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.8s ease-in-out;
-}
-
-.scroll-fadeIn.visible {
-  opacity: 1;
-  transform: translateY(0);
+.testimonial-card h3 {
+  margin-top: 20px;
+  font-size: 1.4em;
+  color: #222;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
-  nav ul li {
-    margin-right: 10px;
-  }
-
-  h1 {
-    font-size: 2.5em;
-  }
-
-  h2 {
+  h1, h2 {
     font-size: 2em;
   }
 
-  .portfolio,
-  .services,
-  .shop,
-  .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  p {
+    font-size: 1em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  .portfolio {
+    grid-template-columns: 1fr;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
   }
 
   .service-card,
   .product-card,
   .testimonial-card {
     width: 100%;
+    margin-bottom: 20px;
   }
 }
-
-/* src/components/Footer.css */
-.footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
+/* Gallery Page */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 20px;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
-.footer-content {
-  max-width: 1200px;
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  animation: glow 1s infinite alternate ease-in-out;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
   margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  animation: slideInRight 1.5s ease-in-out;
 }
 
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0;
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 1.1em;
 }
 
-.footer-links li {
-  display: inline;
-  margin: 0 10px;
-}
-
-.footer-links a {
+.contact-form button {
+  padding: 15px;
+  background-color: #ff5722;
   color: #fff;
-  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.footer-links a:hover {
-  text-decoration: underline;
+.contact-form button:hover {
+  background-color: #e64a19;
+}
+
+/* Blog Post */
+.blog-post {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  animation: slideInLeft 1.5s ease-in-out;
+}
+
+.blog-post h2 {
+  font-size: 2em;
+  color: #333;
+}
+
+.blog-post p {
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Testimonials */
+.testimonial {
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.testimonial h2 {
+  font-size: 2.5em;
+  color: #222;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideInRight 1.5s ease-in-out;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-card p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.testimonial-card h3 {
+  margin-top: 20px;
+  font-size: 1.4em;
+  color: #222;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    padding: 15px;
+  }
+
+  .blog-post h2 {
+    font-size: 1.5em;
+  }
+
+  .testimonial h2 {
+    font-size: 2em;
+  }
+
+  .testimonial-card {
+    width: 100%;
+  }
 }
